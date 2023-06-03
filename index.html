@@ -1,0 +1,56 @@
+<html>
+  
+  <head>
+      <title>Color App By KS</title>
+  </head>
+
+   <style>
+
+      *{font-size:50px;}
+
+   </style>
+
+
+   <script>
+
+      function colorchange(){
+
+      event.preventDefault();
+      
+      let colors = ["red","green","blue","pink","azure"];
+
+
+      let r =    Math.random() * colors.length;
+
+      let r1 = parseInt(r);
+
+      document.body.style.backgroundColor = colors[r1];
+
+     }
+
+
+
+   </script>
+
+
+
+  <body>
+
+   <center>
+
+     <h1> Holi hai <h1>
+
+     <form onsubmit="colorchange()">
+
+     <input type="submit" value="Click to change BG color">
+
+    </form>
+     
+
+
+
+   </center>
+  </body>
+
+
+</html>
